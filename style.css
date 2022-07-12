@@ -138,4 +138,5 @@ font-weight: bold;
   width: 20%;
   height: 10px;
   transition: all 100ms ease-in-out;
+  max-width: 935px;
 }
