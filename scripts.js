@@ -104,8 +104,12 @@ submit5.addEventListener('click', function(){
 submit6.addEventListener('click', function(){
     nextQuestion(7);
 })
+submit7.addEventListener('click', function(){
+    nextQuestion(8);
+})
 
-submit6.addEventListener('click', function(){
+
+submit7.addEventListener('click', function(){
     document.getElementById("printtotalscore").innerHTML = totalScore();
     document.getElementById("printscoreinfo").innerHTML = getInfoBasedOnScore();
 })
