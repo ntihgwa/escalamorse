@@ -16,9 +16,7 @@ function storeAnswer(question_number, event){
     }
 }
 
-question_zero.addEventListener('click', function(event){
-    storeAnswer(1, event)
-})
+
 question_one.addEventListener('click', function(event){
     storeAnswer(2, event)
 })
@@ -36,6 +34,9 @@ question_five.addEventListener('click', function(event){
 })
 question_six.addEventListener('click', function(event){
     storeAnswer(7, event)
+})
+question_seven.addEventListener('click', function(event){
+    storeAnswer(1, event)
 })
 
 function totalScore(){
