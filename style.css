@@ -24,10 +24,9 @@
   display: table;
   clear: both; }
 
-.logosistema{
-  background: url('https://ntihgwa.github.io/escalamorse/img/morse-img.png');
+img {
+  max-width: 100%;
   width: 521px;
-  height: 169px;
   display: block;
   margin: 0 auto;
   margin-top: 20px;
