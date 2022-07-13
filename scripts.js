@@ -64,7 +64,8 @@ function getInfoBasedOnScore(){
     }
 
     return score_info;
-
+}
+    
 var submit1 = document.getElementById('submit1');
 var submit2 = document.getElementById('submit2');
 var submit3 = document.getElementById('submit3');
