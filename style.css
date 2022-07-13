@@ -26,10 +26,11 @@
 
 .logosistema{
   background: url('https://ntihgwa.github.io/escalamorse/img/morse-img.png');
-  width: 707px;
-  height: 300px;
+  width: 694px;
+  height: 225px;
   display: block;
   margin: 0 auto;
+  margin-top: 20px;
 }
 
 body {
