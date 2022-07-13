@@ -6,7 +6,6 @@ var question_three = document.getElementById('question-3');
 var question_four = document.getElementById('question-4');
 var question_five = document.getElementById('question-5');
 var question_six = document.getElementById('question-6');
-var question_seven = document.getElementById('question-7');
 
 function storeAnswer(question_number, event){
     if(event.target.type === 'radio'){
@@ -15,7 +14,6 @@ function storeAnswer(question_number, event){
         console.log(answers);
     }
 }
-
 
 question_one.addEventListener('click', function(event){
     storeAnswer(1, event)
@@ -35,19 +33,15 @@ question_five.addEventListener('click', function(event){
 question_six.addEventListener('click', function(event){
     storeAnswer(6, event)
 })
-question_seven.addEventListener('click', function(event){
-    storeAnswer(7, event)
-})
 
 function totalScore(){
-    var total_score =
+    var total_score = 
     answers.question1+
     answers.question2+
     answers.question3+
-    answers.question4+
+    answers.question4+ 
     answers.question5+
-    answers.question6+
-    answers.question7;
+    answers.question6;
     
     return total_score;
 }
@@ -65,14 +59,13 @@ function getInfoBasedOnScore(){
 
     return score_info;
 }
-    
+
 var submit1 = document.getElementById('submit1');
 var submit2 = document.getElementById('submit2');
 var submit3 = document.getElementById('submit3');
 var submit4 = document.getElementById('submit4');
 var submit5 = document.getElementById('submit5');
 var submit6 = document.getElementById('submit6');
-var submit7 = document.getElementById('submit7');
 
 function nextQuestion(question_number){
     var current_question_number = question_number - 1;
@@ -86,13 +79,14 @@ function nextQuestion(question_number){
     el2.style.display = "none";
 }
 
+
 submit1.addEventListener('click', function(){
     nextQuestion(2);
-    growProgressBar('30%');
+    growProgressBar('20%');
 })
 submit2.addEventListener('click', function(){
     nextQuestion(3);
-    growProgressBar('45%');
+    growProgressBar('40%');
 })
 submit3.addEventListener('click', function(){
     nextQuestion(4);
@@ -104,17 +98,13 @@ submit4.addEventListener('click', function(){
 })
 submit5.addEventListener('click', function(){
     nextQuestion(6);
-    growProgressBar('90%');
+    growProgressBar('100%');
 })
 submit6.addEventListener('click', function(){
     nextQuestion(7);
-    growProgressBar('100%');
-})
-submit7.addEventListener('click', function(){
-    nextQuestion(8);
 })
 
-submit7.addEventListener('click', function(){
+submit6.addEventListener('click', function(){
     document.getElementById("printtotalscore").innerHTML = totalScore();
     document.getElementById("printscoreinfo").innerHTML = getInfoBasedOnScore();
 })
