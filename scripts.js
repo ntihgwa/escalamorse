@@ -18,25 +18,25 @@ function storeAnswer(question_number, event){
 
 
 question_one.addEventListener('click', function(event){
-    storeAnswer(2, event)
+    storeAnswer(1, event)
 })
 question_two.addEventListener('click', function(event){
-    storeAnswer(3, event)
+    storeAnswer(2, event)
 })
 question_three.addEventListener('click', function(event){
-    storeAnswer(4, event)
+    storeAnswer(3, event)
 })
 question_four.addEventListener('click', function(event){
-    storeAnswer(5, event)
+    storeAnswer(4, event)
 })
 question_five.addEventListener('click', function(event){
-    storeAnswer(6, event)
+    storeAnswer(5, event)
 })
 question_six.addEventListener('click', function(event){
-    storeAnswer(7, event)
+    storeAnswer(6, event)
 })
 question_seven.addEventListener('click', function(event){
-    storeAnswer(8, event)
+    storeAnswer(7, event)
 })
 
 function totalScore(){
@@ -53,14 +53,17 @@ function totalScore(){
 }
 
 function getInfoBasedOnScore(){
-    if(totalScore() < 24){
+    if(totalScore() > 40){
+        var score_info = "RISCO ALTO DE QUEDAS!";
+    } 
+    else if(totalScore() >= 25){
+        var score_info = "RISCO MODERADO DE QUEDAS";
+    } 
+    else if(totalScore() < 24){
         var score_info = "RISCO LEVE DE QUEDAS";
-    } else if(totalScore() >= 25){
-        var score_info = "RISCO MODERADO DE QUEDAS!";
     }
 
     return score_info;
-}
 
 var submit1 = document.getElementById('submit1');
 var submit2 = document.getElementById('submit2');
