@@ -95,7 +95,7 @@ font-weight: bold;
   -o-border-radius: 3px;
   border-radius: 3px;
   vertical-align: baseline;
-  background: #075da8;
+  background: #048c7c;
   color: white;
   text-decoration: none !important;
   display: inline-block;
@@ -107,7 +107,7 @@ font-weight: bold;
 }
 
 .button:hover {
-  background-color: #059fdb !important;
+  background-color: #04685c !important;
   color: white;
 }
 
