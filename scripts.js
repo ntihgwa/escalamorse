@@ -105,7 +105,7 @@ submit6.addEventListener('click', function(){
 })
 
 submit6.addEventListener('click', function(){
-    document.getElementById("printtotalscore").innerHTML = totalScore() + "Pontos.";
+    document.getElementById("printtotalscore").innerHTML = totalScore() + " Pontos.";
     document.getElementById("printscoreinfo").innerHTML = getInfoBasedOnScore();
 })
 
