@@ -40,7 +40,7 @@ question_seven.addEventListener('click', function(event){
 })
 
 function totalScore(){
-    var total_score = 
+    var total_score = 0+
     answers.question1+
     answers.question2+
     answers.question3+
