@@ -35,7 +35,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   color: #444444;
   background-color: #f1f1f1;
   margin: 0;
@@ -115,7 +115,7 @@ font-weight: bold;
 }
 
 #progress_bar {
-  background-color: #018fd0;
+  background-color: #048c7c
   width: 20%;
   height: 20px;
   transition: all 100ms ease-in-out;
