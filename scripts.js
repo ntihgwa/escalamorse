@@ -41,6 +41,7 @@ question_seven.addEventListener('click', function(event){
 
 function totalScore(){
     var total_score =
+    answers.question1+
     answers.question2+
     answers.question3+
     answers.question4+ 
@@ -58,7 +59,7 @@ function getInfoBasedOnScore(){
     else if(totalScore() >= 25){
         var score_info = "RISCO MODERADO DE QUEDAS";
     } 
-    else if(totalScore() =< 24){
+    else if(totalScore() < 24){
         var score_info = "RISCO LEVE DE QUEDAS";
     }
 
@@ -112,7 +113,6 @@ submit6.addEventListener('click', function(){
 submit7.addEventListener('click', function(){
     nextQuestion(8);
 })
-
 
 submit7.addEventListener('click', function(){
     document.getElementById("printtotalscore").innerHTML = totalScore();
