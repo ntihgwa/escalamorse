@@ -36,7 +36,7 @@ question_six.addEventListener('click', function(event){
     storeAnswer(7, event)
 })
 question_seven.addEventListener('click', function(event){
-    storeAnswer(1, event)
+    storeAnswer(8, event)
 })
 
 function totalScore(){
@@ -84,11 +84,11 @@ function nextQuestion(question_number){
 
 submit1.addEventListener('click', function(){
     nextQuestion(2);
-    growProgressBar('20%');
+    growProgressBar('30%');
 })
 submit2.addEventListener('click', function(){
     nextQuestion(3);
-    growProgressBar('40%');
+    growProgressBar('45%');
 })
 submit3.addEventListener('click', function(){
     nextQuestion(4);
@@ -100,10 +100,11 @@ submit4.addEventListener('click', function(){
 })
 submit5.addEventListener('click', function(){
     nextQuestion(6);
-    growProgressBar('100%');
+    growProgressBar('90%');
 })
 submit6.addEventListener('click', function(){
     nextQuestion(7);
+    growProgressBar('100%');
 })
 submit7.addEventListener('click', function(){
     nextQuestion(8);
