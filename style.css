@@ -121,6 +121,6 @@ font-weight: bold;
   transition: all 100ms ease-in-out;
 }
 
-input {
+input, label {
   cursor:pointer;
 }
