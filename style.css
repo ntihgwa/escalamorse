@@ -120,3 +120,7 @@ font-weight: bold;
   height: 20px;
   transition: all 100ms ease-in-out;
 }
+
+input {
+  cursor:pointer;
+}
